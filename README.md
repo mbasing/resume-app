@@ -1,2 +1,3 @@
 # resume-app
-A Simple html page that contains a resume
+
+<img src="./public/resume-display.png"/>
