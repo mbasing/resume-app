@@ -14,8 +14,11 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+li {
+  margin-bottom: 0.5rem;
+}
+
 .container {
-  /* overflow: hidden scroll; */
   width: 100vw;
 }
 
@@ -31,7 +34,7 @@ html {
   border-radius: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   cursor: pointer;
-  margin: 1rem auto;
+  margin: 1rem auto 3rem;
   padding: 1rem 2rem;
   width: 50vw;
   white-space: nowrap;
@@ -65,21 +68,117 @@ a {
   text-align: center;
   font-size: 3.5rem;
   color: teal;
-  border-bottom: 3px solid teal;
   padding-bottom: 1rem;
   font-weight: 600;
 }
 
 .contact {
-  display: flex;
-  padding: 0.5rem;
-  column-gap: 5rem;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  width: 100%;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+  justify-items: center;
+  padding-bottom: 1rem;
 }
 
-.contact p {
-  font-size: 1.5rem;
-  color: #333;
+.postal-address p,
+.contact-number p,
+.email-address p {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
   font-weight: 600;
+  color: teal;
+}
+
+.postal-address,
+.contact-number,
+.email-address {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.postal-address i,
+.contact-number i,
+.email-address i {
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  color: dodgerblue;
+}
+
+.postal-address i:hover,
+.contact-number i:hover,
+.email-address i:hover {
+  color: teal;
+}
+
+.work-history h2,
+.projects,
+.education,
+.references {
+  color: teal;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.work-history {
+  padding-top: 2rem;
+}
+
+.history {
+  display: flex;
+  padding: 1rem 0.5rem;
+  font-size: 1.5rem;
+  border-left: 3px solid teal;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.history:hover {
+  transform: scale(0.99);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.date {
+  padding-right: 2rem;
+  width: 30%;
+}
+
+.description {
+  padding-top: 1rem;
+}
+
+.track,
+.company {
+  font-weight: 600;
+  color: #444;
+}
+
+.reference_description {
+  font-size: 1.5rem;
+  border-left: 3px solid teal;
+  padding-left: 1rem;
+  font-weight: 600;
+  color: #444;
+  padding: 0.5rem;
+}
+
+.company__location {
+  display: flex;
+}
+
+.location,
+.date p {
+  color: #444;
+  font-weight: 600;
+}
+
+.work-description {
+  padding-left: 1rem;
+  margin-left: 1rem;
+  width:100%;
 }
