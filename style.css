@@ -152,6 +152,12 @@ a {
   padding-top: 1rem;
 }
 
+.description ul li {
+  text-decoration: none;
+  color: #444;
+  border: 1px solid red;
+}
+
 .track,
 .company {
   font-weight: 600;
@@ -180,5 +186,22 @@ a {
 .work-description {
   padding-left: 1rem;
   margin-left: 1rem;
-  width:100%;
+  width: 100%;
+}
+
+.app {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.app a i {
+  margin-right: 1rem;
+}
+
+.app a i:hover {
+  color: red;
+}
+
+.app p:first-of-type {
+  margin-right: 5rem;
 }
