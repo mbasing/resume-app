@@ -1,3 +1,3 @@
 # resume-app
 
-<img src="./public/resume-display.png"/>
+<img src="./public/resume-display.gif"/>
